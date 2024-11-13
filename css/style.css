@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    color: rgb(255, 20, 145);
+}
+
+.card{
+    background-color: black;
+}
+
+.card-title, .card-text {
+    color: white;
+}
+
+.email{
+    color: blue;
+}
+
