@@ -4,10 +4,21 @@
     box-sizing: border-box;
 }
 
-.container{
+.container-header{
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#team{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 h1{
@@ -16,6 +27,9 @@ h1{
 
 .card{
     background-color: black;
+    margin: 10px;
+    max-width: 350px;
+    max-height: 118px;
 }
 
 .card-title, .card-text {
