@@ -37,11 +37,16 @@ const teamMembers = [
   }
 ];
 
- let template = "";
+ 
+ const myForm = document.getElementById("myForm");
+ myForm.addEventListener("click", addMember);
+ drawCard();
+ 
+ function drawCard(){
+  let template = "";
 
  const team = document.getElementById("team");
-
- for(let value of teamMembers){
+  for(let value of teamMembers){
     template += 
     `<div class="card mb-3">
       <div class="row g-0">
@@ -60,3 +65,22 @@ const teamMembers = [
  }
 
  team.innerHTML = template;
+ }
+
+ 
+ function addMember(event){
+  event.preventDefault();
+  event.stopPropagation();
+  const name = document.getElementById("name").value
+  const role = document.getElementById("role").value
+  const email = document.getElementById("email").value
+  const img = document.getElementById("img").value
+  const newMember = {
+    name,
+    role,
+    img,
+    email,
+  };
+  teamMembers.push(newMember);
+  drawCard();
+ }
