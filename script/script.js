@@ -38,7 +38,7 @@ const teamMembers = [
 ];
 
  
- const myForm = document.getElementById("myForm");
+ const myForm = document.getElementById("click");
  myForm.addEventListener("click", addMember);
  drawCard();
  
